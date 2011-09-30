@@ -104,14 +104,11 @@ section {
 .data {
 	width: 960px;
 	float: left;
-	margin-right: 50px;
-	
+	margin-right: 50px;	
 }
 .graph {
 	background: url(../img/graph-bg.png) top left repeat-x;
 	height: 181px;	
-	position: relative;
-	z-index: 10;
 	&#heart {
 		ul {
 			background: url(../img/heart-line.png);
@@ -136,8 +133,9 @@ section {
 		height: 181px;
 		margin: 0;
 		padding: 0;		
+		position: relative;
 		li {
-			position: absolute;		
+			position: absolute;	
 			a {			
 				width: 20px;
 				height: 20px;
@@ -147,8 +145,7 @@ section {
 				@include border-radius;
 				@include box-shadow(rgba(black,0.2) 0px 0px 4px);
 				outline: none;
-				@include single-transition(all, 0.2s, ease-out, 0);		
-				z-index: 20;
+				@include single-transition(all, 0.2s, ease-out, 0);	
 				.node-data {
 					display: none;
 					text-indent: 0;
@@ -159,7 +156,6 @@ section {
 					padding: 10px;
 					color: rgba(black, 0.9);
 					@include box-shadow(rgba(black,0.5) 0px 0px 4px);
-					z-index: 30;		
 					span {
 						display: block;
 						&.node-data-value {
@@ -167,6 +163,7 @@ section {
 						}
 						h3 {
 							border-bottom: 1px solid black;
+							padding-bottom: 2px;
 							margin-bottom: 4px;
 						}
 						ul {
