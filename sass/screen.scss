@@ -111,6 +111,7 @@ section {
 	background: url(../img/graph-bg.png) top left repeat-x;
 	height: 181px;	
 	position: relative;
+	z-index: 10;
 	&#heart {
 		ul {
 			background: url(../img/heart-line.png);
@@ -132,7 +133,6 @@ section {
 		}		
 	}
 	ul {
-		display: block;
 		height: 181px;
 		margin: 0;
 		padding: 0;		
@@ -142,27 +142,42 @@ section {
 				width: 20px;
 				height: 20px;
 				display: block;	
-				display: block;
 				background: rgba($link-color, 0.3);				
 				text-indent: -9999px;
 				@include border-radius;
 				@include box-shadow(rgba(black,0.2) 0px 0px 4px);
 				outline: none;
 				@include single-transition(all, 0.2s, ease-out, 0);		
+				z-index: 20;
 				.node-data {
 					display: none;
 					text-indent: 0;
 					background: rgba(white,0.9);
 					border: 1px solid $link-color;
 					position: absolute;
-					right: -85px;
+					left: 30px;
 					padding: 10px;
 					color: rgba(black, 0.9);
 					@include box-shadow(rgba(black,0.5) 0px 0px 4px);
+					z-index: 30;		
 					span {
 						display: block;
 						&.node-data-value {
 							font-size: 30px;
+						}
+						h3 {
+							border-bottom: 1px solid black;
+							margin-bottom: 4px;
+						}
+						ul {
+							background: none;
+							height: auto;
+							list-style: disc;	
+							margin-left: 20px;						
+							li {
+								position: static;
+								font-size: 16px;								
+							}
 						}
 					}
 				}
@@ -172,7 +187,7 @@ section {
 					cursor: pointer;			
 				}
 				&:hover .node-data {
-					display: block;
+					display: block;								
 				}
 			}
 		}		
