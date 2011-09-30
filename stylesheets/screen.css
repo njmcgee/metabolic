@@ -474,18 +474,19 @@ h1 {
   text-transform: uppercase;
   font-size: 52px;
   letter-spacing: 1.5px;
+  font-size: 100px;
   background: url(../img/h1-bg.png) no-repeat;
-  height: 100px;
+  height: 118px;
   width: 100%;
   position: relative;
-  left: -110px;
+  left: -145px;
   display: block;
-  padding-left: 120px;
-  padding-top: 20px;
-  margin-bottom: 40px;
+  padding-left: 152px;
+  padding-top: 2px;
+  margin-bottom: 80px;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 h2 {
   text-transform: uppercase;
   font-size: 52px;
@@ -493,18 +494,19 @@ h2 {
   padding-left: 10px;
 }
 
-/* line 70, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 section {
   margin-bottom: 40px;
+  position: relative;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .y-axis {
   width: 35px;
   float: left;
   margin-right: 15px;
 }
-/* line 77, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .y-axis a {
   font-size: 20px;
   text-transform: uppercase;
@@ -512,7 +514,7 @@ section {
   text-align: right;
   margin-top: 32px;
 }
-/* line 84, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 .y-axis ul {
   display: block;
   text-align: right;
@@ -520,41 +522,53 @@ section {
   margin: 0;
   margin-top: 7px;
 }
-/* line 90, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .y-axis ul li {
   font-size: 20px;
   margin-bottom: 15px;
 }
 
-/* line 96, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .data {
   width: 960px;
   float: left;
   margin-right: 50px;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .graph {
   background: url(../img/graph-bg.png) top left repeat-x;
   height: 181px;
   position: relative;
 }
-/* line 107, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .graph#heart ul {
   background: url(../img/heart-line.png);
 }
-/* line 111, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
+.graph#drinks ul {
+  background: url(../img/drink-line.png);
+}
+/* line 119, ../sass/screen.scss */
+.graph#calories ul {
+  background: url(../img/calories-line.png);
+}
+/* line 124, ../sass/screen.scss */
+.graph#sleep ul {
+  background: url(../img/sleep-line.png);
+}
+/* line 128, ../sass/screen.scss */
 .graph ul {
   display: block;
   height: 181px;
   margin: 0;
   padding: 0;
 }
-/* line 116, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .graph ul li {
   position: absolute;
 }
-/* line 118, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .graph ul li a {
   width: 20px;
   height: 20px;
@@ -574,12 +588,22 @@ section {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
   outline: none;
 }
-/* line 128, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .graph ul li a:hover {
   background: rgba(61, 195, 245, 0.8);
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
+.add {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 24px;
+  right: 50px;
+  top: 30px;
+  letter-spacing: 1px;
+}
+
+/* line 161, ../sass/screen.scss */
 .clear {
   clear: both;
 }
