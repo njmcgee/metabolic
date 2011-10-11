@@ -445,7 +445,7 @@ body {
   font-weight: 400;
   font-style: normal;
   text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
-  padding-top: 60px;
+  padding-top: 0px;
 }
 
 /* line 38, ../sass/screen.scss */
@@ -454,40 +454,38 @@ body {
   margin: 0 auto;
 }
 
-/* line 42, ../sass/screen.scss */
-header {
-  padding: 0 50px;
+/* line 44, ../sass/screen.scss */
+#main {
+  /*margin-top: -20px;*/
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 a {
   color: rgba(61, 195, 245, 0.7);
   text-decoration: none;
 }
-/* line 48, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 a:visited {
   color: rgba(61, 195, 245, 0.7);
 }
-/* line 51, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 a:hover {
   color: rgba(61, 195, 245, 0.95);
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 h1 {
   text-transform: uppercase;
   font-size: 52px;
   letter-spacing: 1.5px;
-  font-size: 100px;
+  font-size: 60px;
+  margin: 0 auto;
   background: url(../img/h1-bg.png) no-repeat;
-  height: 118px;
-  width: 100%;
-  position: relative;
-  left: -145px;
-  display: block;
-  padding-left: 152px;
-  padding-top: 2px;
-  margin-bottom: 60px;
+  height: 176px;
+  width: 235px;
+  padding-top: 26px;
+  padding-left: 74px;
+  margin-bottom: 0px;
 }
 
 /* line 73, ../sass/screen.scss */
@@ -543,35 +541,42 @@ section {
 .graph {
   background: url(../img/graph-bg.png) top left repeat-x;
   height: 181px;
+  position: relative;
+  /*	&#heart {
+  		ul {
+  			background: url(../img/heart-line.png);
+  		}		
+  	}*/
 }
 /* line 113, ../sass/screen.scss */
-.graph#heart ul {
-  background: url(../img/heart-line.png);
+.graph .svg-graph-lines {
+  position: absolute;
+  display: block;
 }
-/* line 118, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .graph#drinks ul {
   background: url(../img/drink-line.png);
 }
-/* line 123, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .graph#calories ul {
   background: url(../img/calories-line.png);
 }
-/* line 128, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .graph#sleep ul {
   background: url(../img/sleep-line.png);
 }
-/* line 132, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .graph ul {
   height: 181px;
   margin: 0;
   padding: 0;
   position: relative;
 }
-/* line 137, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .graph ul li {
   position: absolute;
 }
-/* line 139, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .graph ul li a {
   width: 20px;
   height: 20px;
@@ -606,7 +611,7 @@ section {
   -o-transition-delay: 0;
   transition-delay: 0;
 }
-/* line 149, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .graph ul li a .node-data {
   display: none;
   text-indent: 0;
@@ -621,33 +626,33 @@ section {
   -o-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
 }
-/* line 159, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .graph ul li a .node-data span {
   display: block;
 }
-/* line 161, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .graph ul li a .node-data span.node-data-value {
   font-size: 30px;
 }
-/* line 164, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .graph ul li a .node-data span h3 {
   border-bottom: 1px solid black;
   padding-bottom: 2px;
   margin-bottom: 4px;
 }
-/* line 169, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .graph ul li a .node-data span ul {
   background: none;
   height: auto;
   list-style: disc;
   margin-left: 20px;
 }
-/* line 174, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .graph ul li a .node-data span ul li {
   position: static;
   font-size: 16px;
 }
-/* line 181, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .graph ul li a:hover {
   background: rgba(61, 195, 245, 0.8);
   -moz-transform: scale(1.3, 1.3);
@@ -657,12 +662,12 @@ section {
   transform: scale(1.3, 1.3);
   cursor: pointer;
 }
-/* line 186, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .graph ul li a:hover .node-data {
   display: block;
 }
 
-/* line 194, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .add {
   position: absolute;
   text-transform: uppercase;
@@ -672,7 +677,7 @@ section {
   letter-spacing: 1px;
 }
 
-/* line 202, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .clear {
   clear: both;
 }
