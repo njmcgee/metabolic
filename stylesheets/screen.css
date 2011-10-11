@@ -446,34 +446,35 @@ body {
   font-style: normal;
   text-shadow: rgba(0, 0, 0, 0.3) 0px 0px 3px;
   padding-top: 0px;
+  /*border-top: 3px solid rgba($link-color, 0.1);*/
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 #container {
   width: 1060px;
   margin: 0 auto;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 #main {
-  /*margin-top: -20px;*/
+  margin-top: -65px;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 a {
   color: rgba(61, 195, 245, 0.7);
   text-decoration: none;
 }
-/* line 50, ../sass/screen.scss */
+/* line 51, ../sass/screen.scss */
 a:visited {
   color: rgba(61, 195, 245, 0.7);
 }
-/* line 53, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 a:hover {
   color: rgba(61, 195, 245, 0.95);
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 h1 {
   text-transform: uppercase;
   font-size: 52px;
@@ -482,33 +483,48 @@ h1 {
   margin: 0 auto;
   background: url(../img/h1-bg.png) no-repeat;
   height: 176px;
-  width: 235px;
+  width: 233px;
   padding-top: 26px;
-  padding-left: 74px;
+  padding-left: 76px;
   margin-bottom: 0px;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 h2 {
   text-transform: uppercase;
   font-size: 52px;
   letter-spacing: 1.5px;
-  padding-left: 10px;
+  /*padding-left: 10px;*/
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 section {
-  margin-bottom: 40px;
+  /*margin-bottom: 40px;*/
   position: relative;
+  /*background: rgba($link-color, 0.02);*/
+  padding-top: 20px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+  background: rgba(61, 195, 245, 0.04);
+  padding-bottom: 10px;
+  border: 1px solid rgba(61, 195, 245, 0.1);
+  border-top: none;
+}
+/* line 88, ../sass/screen.scss */
+section:nth-child(1) {
+  border-top: 1px solid rgba(61, 195, 245, 0.1);
 }
 
-/* line 81, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .y-axis {
   width: 35px;
   float: left;
+  padding-left: 8px;
   margin-right: 15px;
 }
-/* line 85, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .y-axis a {
   font-size: 20px;
   text-transform: uppercase;
@@ -516,7 +532,7 @@ section {
   text-align: right;
   margin-top: 32px;
 }
-/* line 92, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .y-axis ul {
   display: block;
   text-align: right;
@@ -524,20 +540,20 @@ section {
   margin: 0;
   margin-top: 7px;
 }
-/* line 98, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .y-axis ul li {
   font-size: 20px;
   margin-bottom: 16px;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .data {
   width: 960px;
   float: left;
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .graph {
   background: url(../img/graph-bg.png) top left repeat-x;
   height: 181px;
@@ -548,35 +564,35 @@ section {
   		}		
   	}*/
 }
-/* line 113, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .graph .svg-graph-lines {
   position: absolute;
   display: block;
 }
-/* line 123, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .graph#drinks ul {
   background: url(../img/drink-line.png);
 }
-/* line 128, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .graph#calories ul {
   background: url(../img/calories-line.png);
 }
-/* line 133, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .graph#sleep ul {
   background: url(../img/sleep-line.png);
 }
-/* line 137, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .graph ul {
   height: 181px;
   margin: 0;
   padding: 0;
   position: relative;
 }
-/* line 142, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .graph ul li {
   position: absolute;
 }
-/* line 144, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .graph ul li a {
   width: 20px;
   height: 20px;
@@ -611,7 +627,7 @@ section {
   -o-transition-delay: 0;
   transition-delay: 0;
 }
-/* line 154, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .graph ul li a .node-data {
   display: none;
   text-indent: 0;
@@ -626,33 +642,33 @@ section {
   -o-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
 }
-/* line 164, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .graph ul li a .node-data span {
   display: block;
 }
-/* line 166, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .graph ul li a .node-data span.node-data-value {
   font-size: 30px;
 }
-/* line 169, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .graph ul li a .node-data span h3 {
   border-bottom: 1px solid black;
   padding-bottom: 2px;
   margin-bottom: 4px;
 }
-/* line 174, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .graph ul li a .node-data span ul {
   background: none;
   height: auto;
   list-style: disc;
   margin-left: 20px;
 }
-/* line 179, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .graph ul li a .node-data span ul li {
   position: static;
   font-size: 16px;
 }
-/* line 186, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .graph ul li a:hover {
   background: rgba(61, 195, 245, 0.8);
   -moz-transform: scale(1.3, 1.3);
@@ -662,12 +678,12 @@ section {
   transform: scale(1.3, 1.3);
   cursor: pointer;
 }
-/* line 191, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .graph ul li a:hover .node-data {
   display: block;
 }
 
-/* line 199, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .add {
   position: absolute;
   text-transform: uppercase;
@@ -675,9 +691,16 @@ section {
   right: 50px;
   top: 30px;
   letter-spacing: 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+  padding: 4px;
+  background: rgba(61, 195, 245, 0.1);
+  border: 1px solid rgba(61, 195, 245, 0.1);
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .clear {
   clear: both;
 }
