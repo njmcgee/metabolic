@@ -86,9 +86,20 @@ section {
 	border: 1px solid rgba($link-color, 0.1);
 	border-top: none;	
 	&:nth-child(1) {
-	  border-top: 1px solid rgba($link-color, 0.1);
+	  border-top: 1px solid rgba($link-color, 0.1);		
 	}
-	
+	&:nth-child(2) {
+	  background: rgba(#E65373, 0.06);
+	}
+	&:nth-child(3) {
+	  background: rgba(#AEA61C, 0.025);
+	}
+	&:nth-child(4) {
+	  background: rgba(#187294, 0.02);
+	}
+	&:nth-child(5) {
+	  background: rgba(#948E20, 0.025);
+	}	
 }
 .y-axis {
 	width: 35px;
