@@ -494,10 +494,11 @@ h2 {
   text-transform: uppercase;
   font-size: 52px;
   letter-spacing: 1.5px;
+  margin-bottom: 8px;
   /*padding-left: 10px;*/
 }
 
-/* line 78, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 section {
   /*margin-bottom: 40px;*/
   position: relative;
@@ -509,38 +510,39 @@ section {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
   background: rgba(61, 195, 245, 0.04);
   padding-bottom: 10px;
-  border: 1px solid rgba(61, 195, 245, 0.1);
+  border: 1px solid rgba(61, 195, 245, 0.2);
   border-top: none;
 }
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 section:nth-child(1) {
   border-top: 1px solid rgba(61, 195, 245, 0.1);
 }
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 section:nth-child(2) {
   background: rgba(230, 83, 115, 0.06);
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 section:nth-child(3) {
   background: rgba(174, 166, 28, 0.025);
 }
-/* line 97, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 section:nth-child(4) {
   background: rgba(24, 114, 148, 0.02);
 }
-/* line 100, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 section:nth-child(5) {
   background: rgba(148, 142, 32, 0.025);
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .y-axis {
   width: 35px;
   float: left;
   padding-left: 8px;
   margin-right: 15px;
+  margin-top: 61px;
 }
-/* line 109, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 .y-axis a {
   font-size: 20px;
   text-transform: uppercase;
@@ -548,7 +550,7 @@ section:nth-child(5) {
   text-align: right;
   margin-top: 32px;
 }
-/* line 116, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .y-axis ul {
   display: block;
   text-align: right;
@@ -556,59 +558,58 @@ section:nth-child(5) {
   margin: 0;
   margin-top: 7px;
 }
-/* line 122, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .y-axis ul li {
   font-size: 20px;
   margin-bottom: 16px;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .data {
   width: 960px;
   float: left;
   margin-right: 40px;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 135, ../sass/screen.scss */
 .graph {
   background: url(../img/graph-bg.png) top left repeat-x;
   height: 181px;
-  position: relative;
   /*	&#heart {
   		ul {
   			background: url(../img/heart-line.png);
   		}		
   	}*/
 }
-/* line 137, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .graph .svg-graph-lines {
   position: absolute;
   display: block;
 }
-/* line 147, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .graph#drinks ul {
   background: url(../img/drink-line.png);
 }
-/* line 152, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .graph#calories ul {
   background: url(../img/calories-line.png);
 }
-/* line 157, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 .graph#sleep ul {
   background: url(../img/sleep-line.png);
 }
-/* line 161, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .graph ul {
   height: 181px;
   margin: 0;
   padding: 0;
   position: relative;
 }
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .graph ul li {
   position: absolute;
 }
-/* line 168, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .graph ul li a {
   width: 20px;
   height: 20px;
@@ -621,10 +622,10 @@ section:nth-child(5) {
   -ms-border-radius: 50px;
   -khtml-border-radius: 50px;
   border-radius: 50px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
   outline: none;
   -moz-transition-property: all;
   -webkit-transition-property: all;
@@ -643,48 +644,59 @@ section:nth-child(5) {
   -o-transition-delay: 0;
   transition-delay: 0;
 }
-/* line 178, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 .graph ul li a .node-data {
   display: none;
   text-indent: 0;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(61, 195, 245, 0.7);
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(61, 195, 245, 0.4);
   position: absolute;
   left: 30px;
-  padding: 10px;
-  color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.9);
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
   -o-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
+  z-index: 100;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1px;
 }
-/* line 188, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .graph ul li a .node-data span {
   display: block;
 }
-/* line 190, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .graph ul li a .node-data span.node-data-value {
-  font-size: 30px;
+  font-size: 52px;
+  letter-spacing: 1.5px;
 }
-/* line 193, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
+.graph ul li a .node-data span.date {
+  font-style: italic;
+  text-align: right;
+  font-size: 22px;
+}
+/* line 204, ../sass/screen.scss */
 .graph ul li a .node-data span h3 {
   border-bottom: 1px solid black;
   padding-bottom: 2px;
-  margin-bottom: 4px;
+  letter-spacing: 1px;
 }
-/* line 198, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .graph ul li a .node-data span ul {
   background: none;
   height: auto;
   list-style: disc;
   margin-left: 20px;
 }
-/* line 203, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .graph ul li a .node-data span ul li {
   position: static;
   font-size: 16px;
 }
-/* line 210, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .graph ul li a:hover {
   background: rgba(61, 195, 245, 0.8);
   -moz-transform: scale(1.3, 1.3);
@@ -694,12 +706,12 @@ section:nth-child(5) {
   transform: scale(1.3, 1.3);
   cursor: pointer;
 }
-/* line 215, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .graph ul li a:hover .node-data {
   display: block;
 }
 
-/* line 223, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .add {
   position: absolute;
   text-transform: uppercase;
@@ -707,16 +719,42 @@ section:nth-child(5) {
   right: 50px;
   top: 30px;
   letter-spacing: 1px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
-  padding: 4px;
-  background: rgba(61, 195, 245, 0.1);
-  border: 1px solid rgba(61, 195, 245, 0.1);
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
+  -o-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
+  padding: 5px 8px 4px;
+  background: rgba(61, 195, 245, 0.2);
+  border: 1px solid rgba(61, 195, 245, 0.4);
+  -moz-transition-property: all;
+  -webkit-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -moz-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+}
+/* line 246, ../sass/screen.scss */
+.add:hover {
+  background: rgba(0, 0, 0, 0.2);
+  -moz-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  -o-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  cursor: pointer;
 }
 
-/* line 235, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .clear {
   clear: both;
 }

@@ -73,6 +73,7 @@ h1 {
 }
 h2 {
 	@include heading;
+	margin-bottom: 8px;
 	/*padding-left: 10px;*/
 }
 section {
@@ -83,7 +84,7 @@ section {
 	@include box-shadow(rgba(black,0.3) 0px 0px 4px);	
 	background: rgba($link-color, 0.04);
 	padding-bottom: 10px;
-	border: 1px solid rgba($link-color, 0.1);
+	border: 1px solid rgba($link-color, 0.2);
 	border-top: none;	
 	&:nth-child(1) {
 	  border-top: 1px solid rgba($link-color, 0.1);		
@@ -106,6 +107,7 @@ section {
 	float: left;
 	padding-left: 8px;
 	margin-right: 15px;
+	margin-top: 61px;
 	a {
 		font-size: 20px;
 		text-transform: uppercase;
@@ -133,7 +135,6 @@ section {
 .graph {
 	background: url(../img/graph-bg.png) top left repeat-x;
 	height: 181px;	
-	position: relative;
 	.svg-graph-lines {
 		position: absolute;
 		display: block;
@@ -172,28 +173,38 @@ section {
 				background: rgba($link-color, 0.3);				
 				text-indent: -9999px;
 				@include border-radius;
-				@include box-shadow(rgba(black,0.2) 0px 0px 4px);
+				@include box-shadow(rgba(black,0.3) 0px 0px 4px);
 				outline: none;
 				@include single-transition(all, 0.2s, ease-out, 0);	
 				.node-data {
 					display: none;
 					text-indent: 0;
-					background: rgba(white,0.9);
-					border: 1px solid $link-color;
+					background: rgba(black,0.5);
+					border: 1px solid rgba($link-color, 0.4);
 					position: absolute;
 					left: 30px;
-					padding: 10px;
-					color: rgba(black, 0.9);
+					padding: 20px;
+					color: rgba(white, 0.9);
 					@include box-shadow(rgba(black,0.5) 0px 0px 4px);
+					z-index: 100;
+					text-transform: uppercase;
+					font-size: 30px;
+					letter-spacing: 1px;
 					span {
 						display: block;
 						&.node-data-value {
-							font-size: 30px;
+							font-size: 52px;
+							letter-spacing: 1.5px;
+						}
+						&.date {
+							font-style: italic;
+							text-align: right;
+							font-size: 22px;
 						}
 						h3 {
 							border-bottom: 1px solid black;
 							padding-bottom: 2px;
-							margin-bottom: 4px;
+							letter-spacing: 1px;
 						}
 						ul {
 							background: none;
@@ -227,10 +238,16 @@ section {
 	right: 50px;
 	top: 30px;
 	letter-spacing: 1px;
-	@include box-shadow(rgba(black,0.2) 0px 0px 4px);
-	padding: 4px;
-	background: rgba($link-color, 0.1);
-	border: 1px solid rgba($link-color, 0.1);
+	@include box-shadow(rgba(black,0.4) 0px 0px 4px);
+	padding: 5px 8px 4px;
+	background: rgba($link-color, 0.2);
+	border: 1px solid rgba($link-color, 0.4);
+	@include single-transition(all, 0.2s, ease-out, 0);	
+	&:hover {
+		background: rgba(black, 0.2);
+		@include scale(1.2,1.2);	
+		cursor: pointer;
+	}
 }
 .clear {
 	clear: both;
