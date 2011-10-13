@@ -580,15 +580,16 @@ section:nth-child(5) {
   			background: url(../img/heart-line.png);
   		}		
   	}*/
+  /*	&#drinks {
+  		ul {
+  			background: url(../img/drink-line.png);
+  		}		
+  	}*/
 }
 /* line 138, ../sass/screen.scss */
 .graph .svg-graph-lines {
   position: absolute;
   display: block;
-}
-/* line 148, ../sass/screen.scss */
-.graph#drinks ul {
-  background: url(../img/drink-line.png);
 }
 /* line 153, ../sass/screen.scss */
 .graph#calories ul {
@@ -604,12 +605,13 @@ section:nth-child(5) {
   margin: 0;
   padding: 0;
   position: relative;
+  z-index: 1;
 }
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .graph ul li {
   position: absolute;
 }
-/* line 169, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 .graph ul li a {
   width: 20px;
   height: 20px;
@@ -644,7 +646,7 @@ section:nth-child(5) {
   -o-transition-delay: 0;
   transition-delay: 0;
 }
-/* line 179, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .graph ul li a .node-data {
   display: none;
   text-indent: 0;
@@ -658,45 +660,46 @@ section:nth-child(5) {
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
   -o-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
-  z-index: 100;
   text-transform: uppercase;
   font-size: 30px;
   letter-spacing: 1px;
+  z-index: 10;
 }
-/* line 193, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .graph ul li a .node-data span {
   display: block;
 }
-/* line 195, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .graph ul li a .node-data span.node-data-value {
   font-size: 52px;
   letter-spacing: 1.5px;
 }
-/* line 199, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .graph ul li a .node-data span.date {
   font-style: italic;
   text-align: right;
   font-size: 22px;
 }
-/* line 204, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .graph ul li a .node-data span h3 {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 2px;
   letter-spacing: 1px;
 }
-/* line 209, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .graph ul li a .node-data span ul {
   background: none;
   height: auto;
   list-style: disc;
-  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: 10px;
 }
-/* line 214, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .graph ul li a .node-data span ul li {
   position: static;
   font-size: 16px;
 }
-/* line 221, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .graph ul li a:hover {
   background: rgba(61, 195, 245, 0.8);
   -moz-transform: scale(1.3, 1.3);
@@ -706,12 +709,12 @@ section:nth-child(5) {
   transform: scale(1.3, 1.3);
   cursor: pointer;
 }
-/* line 226, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .graph ul li a:hover .node-data {
   display: block;
 }
 
-/* line 234, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .add {
   position: absolute;
   text-transform: uppercase;
@@ -743,7 +746,7 @@ section:nth-child(5) {
   -o-transition-delay: 0;
   transition-delay: 0;
 }
-/* line 246, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .add:hover {
   background: rgba(0, 0, 0, 0.2);
   -moz-transform: scale(1.2, 1.2);
@@ -754,7 +757,7 @@ section:nth-child(5) {
   cursor: pointer;
 }
 
-/* line 252, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .clear {
   clear: both;
 }

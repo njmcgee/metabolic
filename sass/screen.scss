@@ -144,11 +144,11 @@ section {
 			background: url(../img/heart-line.png);
 		}		
 	}*/
-	&#drinks {
+/*	&#drinks {
 		ul {
 			background: url(../img/drink-line.png);
 		}		
-	}
+	}*/
 	&#calories {
 		ul {
 			background: url(../img/calories-line.png);
@@ -164,6 +164,7 @@ section {
 		margin: 0;
 		padding: 0;		
 		position: relative;
+		z-index: 1;
 		li {
 			position: absolute;	
 			a {			
@@ -186,10 +187,10 @@ section {
 					padding: 20px;
 					color: rgba(white, 0.9);
 					@include box-shadow(rgba(black,0.5) 0px 0px 4px);
-					z-index: 100;
 					text-transform: uppercase;
 					font-size: 30px;
 					letter-spacing: 1px;
+					z-index: 10;
 					span {
 						display: block;
 						&.node-data-value {
@@ -202,7 +203,7 @@ section {
 							font-size: 22px;
 						}
 						h3 {
-							border-bottom: 1px solid black;
+							border-bottom: 1px solid rgba(white, 0.3);
 							padding-bottom: 2px;
 							letter-spacing: 1px;
 						}
@@ -210,7 +211,8 @@ section {
 							background: none;
 							height: auto;
 							list-style: disc;	
-							margin-left: 20px;						
+							margin-left: 30px;	
+							margin-top: 10px;					
 							li {
 								position: static;
 								font-size: 16px;								
