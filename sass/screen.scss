@@ -10,6 +10,7 @@
 @import "compass/css3/box-shadow";
 @import "compass/css3/transition";
 @import "compass/css3/transform";
+@import "compass/css3/border-radius";
 
 /* =============================================================================
    Primary styles
@@ -87,7 +88,8 @@ section {
 	border: 1px solid rgba($link-color, 0.2);
 	border-top: none;	
 	&:nth-child(1) {
-	  border-top: 1px solid rgba($link-color, 0.1);		
+	  border-top: 1px solid rgba($link-color, 0.1);
+		@include border-top-radius(20px);
 	}
 	&:nth-child(2) {
 	  background: rgba(#E65373, 0.06);
@@ -160,17 +162,19 @@ section {
 				.node-data {
 					display: none;
 					text-indent: 0;
-					background: rgba(black,0.5);
+					background: rgba(black,0.8);
 					border: 1px solid rgba($link-color, 0.4);
 					position: absolute;
 					left: 30px;
-					padding: 20px;
+					padding: 20px 20px 16px;
 					color: rgba(white, 0.9);
 					@include box-shadow(rgba(black,0.5) 0px 0px 4px);
 					text-transform: uppercase;
 					font-size: 30px;
 					letter-spacing: 1px;
 					z-index: 10;
+					@include border-radius(10px);
+					@include border-top-left-radius(0px);
 					span {
 						display: block;
 						&.node-data-value {
@@ -192,7 +196,8 @@ section {
 							height: auto;
 							list-style: disc;	
 							margin-left: 30px;	
-							margin-top: 10px;					
+							margin-top: 10px;	
+							margin-bottom: 4px;				
 							li {
 								position: static;
 								font-size: 16px;								
@@ -225,6 +230,7 @@ section {
 	background: rgba($link-color, 0.2);
 	border: 1px solid rgba($link-color, 0.4);
 	@include single-transition(all, 0.2s, ease-out, 0);	
+	@include border-radius(5px);
 	&:hover {
 		background: rgba(black, 0.2);
 		@include scale(1.2,1.2);	
