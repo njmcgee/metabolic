@@ -503,17 +503,18 @@ section {
   /*margin-bottom: 40px;*/
   position: relative;
   /*background: rgba($link-color, 0.02);*/
-  padding-top: 20px;
+  padding-top: 23px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
   -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
   background: rgba(61, 195, 245, 0.04);
-  padding-bottom: 10px;
-  border: 1px solid rgba(61, 195, 245, 0.2);
+  padding-bottom: 17px;
+  border: 2px solid rgba(61, 195, 245, 0.1);
+  border-bottom: 2px solid rgba(61, 195, 245, 0.2);
   border-top: none;
 }
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 section:nth-child(1) {
   border-top: 1px solid rgba(61, 195, 245, 0.1);
   -moz-border-radius-topleft: 20px;
@@ -529,32 +530,44 @@ section:nth-child(1) {
   -khtml-border-top-right-radius: 20px;
   border-top-right-radius: 20px;
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 section:nth-child(2) {
   background: rgba(230, 83, 115, 0.06);
 }
-/* line 97, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 section:nth-child(3) {
   background: rgba(174, 166, 28, 0.025);
 }
-/* line 100, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 section:nth-child(4) {
   background: rgba(24, 114, 148, 0.02);
 }
-/* line 103, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 section:nth-child(5) {
-  background: rgba(148, 142, 32, 0.025);
+  margin-bottom: 100px;
+  -moz-border-radius-bottomleft: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  -o-border-bottom-left-radius: 20px;
+  -ms-border-bottom-left-radius: 20px;
+  -khtml-border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  -o-border-bottom-right-radius: 20px;
+  -ms-border-bottom-right-radius: 20px;
+  -khtml-border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .y-axis {
   width: 35px;
   float: left;
   padding-left: 8px;
-  margin-right: 15px;
+  margin-right: 13px;
   margin-top: 61px;
 }
-/* line 113, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .y-axis a {
   font-size: 20px;
   text-transform: uppercase;
@@ -562,7 +575,7 @@ section:nth-child(5) {
   text-align: right;
   margin-top: 32px;
 }
-/* line 120, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .y-axis ul {
   display: block;
   text-align: right;
@@ -570,30 +583,30 @@ section:nth-child(5) {
   margin: 0;
   margin-top: 7px;
 }
-/* line 126, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .y-axis ul li {
   font-size: 20px;
   margin-bottom: 16px;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .data {
   width: 960px;
   float: left;
   margin-right: 40px;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .graph {
   background: url(../img/graph-bg.png) top left repeat-x;
   height: 181px;
 }
-/* line 140, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .graph .svg-graph-lines {
   position: absolute;
   display: block;
 }
-/* line 144, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .graph ul {
   height: 181px;
   margin: 0;
@@ -601,11 +614,11 @@ section:nth-child(5) {
   position: relative;
   z-index: 1;
 }
-/* line 150, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 .graph ul li {
   position: absolute;
 }
-/* line 152, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .graph ul li a {
   width: 20px;
   height: 20px;
@@ -640,7 +653,7 @@ section:nth-child(5) {
   -o-transition-delay: 0;
   transition-delay: 0;
 }
-/* line 162, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .graph ul li a .node-data {
   display: none;
   text-indent: 0;
@@ -671,28 +684,28 @@ section:nth-child(5) {
   -khtml-border-top-left-radius: 0px;
   border-top-left-radius: 0px;
 }
-/* line 178, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .graph ul li a .node-data span {
   display: block;
 }
-/* line 180, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .graph ul li a .node-data span.node-data-value {
   font-size: 52px;
   letter-spacing: 1.5px;
 }
-/* line 184, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .graph ul li a .node-data span.date {
   font-style: italic;
   text-align: right;
   font-size: 22px;
 }
-/* line 189, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .graph ul li a .node-data span h3 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding-bottom: 2px;
   letter-spacing: 1px;
 }
-/* line 194, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 .graph ul li a .node-data span ul {
   background: none;
   height: auto;
@@ -701,12 +714,12 @@ section:nth-child(5) {
   margin-top: 10px;
   margin-bottom: 4px;
 }
-/* line 201, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .graph ul li a .node-data span ul li {
   position: static;
   font-size: 16px;
 }
-/* line 208, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .graph ul li a:hover {
   background: rgba(61, 195, 245, 0.8);
   -moz-transform: scale(1.3, 1.3);
@@ -716,12 +729,12 @@ section:nth-child(5) {
   transform: scale(1.3, 1.3);
   cursor: pointer;
 }
-/* line 213, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 .graph ul li a:hover .node-data {
   display: block;
 }
 
-/* line 221, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .add {
   position: absolute;
   text-transform: uppercase;
@@ -734,7 +747,7 @@ section:nth-child(5) {
   -o-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
   padding: 5px 8px 4px;
-  background: rgba(61, 195, 245, 0.2);
+  background: rgba(61, 195, 245, 0.15);
   border: 1px solid rgba(61, 195, 245, 0.4);
   -moz-transition-property: all;
   -webkit-transition-property: all;
@@ -759,7 +772,7 @@ section:nth-child(5) {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 234, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .add:hover {
   background: rgba(0, 0, 0, 0.2);
   -moz-transform: scale(1.2, 1.2);
@@ -770,7 +783,7 @@ section:nth-child(5) {
   cursor: pointer;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .clear {
   clear: both;
 }
