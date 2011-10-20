@@ -544,7 +544,7 @@ section:nth-child(4) {
 }
 /* line 104, ../sass/screen.scss */
 section:nth-child(5) {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   -moz-border-radius-bottomleft: 20px;
   -webkit-border-bottom-left-radius: 20px;
   -o-border-bottom-left-radius: 20px;
@@ -631,10 +631,10 @@ section:nth-child(5) {
   -ms-border-radius: 50px;
   -khtml-border-radius: 50px;
   border-radius: 50px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
-  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 4px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
+  -o-box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px;
   outline: none;
   -moz-transition-property: all;
   -webkit-transition-property: all;
@@ -786,6 +786,25 @@ section:nth-child(5) {
 /* line 242, ../sass/screen.scss */
 .clear {
   clear: both;
+}
+
+/* line 246, ../sass/screen.scss */
+footer {
+  font-size: 18px;
+  margin-bottom: 50px;
+  font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-left: 25px;
+}
+/* line 251, ../sass/screen.scss */
+footer #html5-svg {
+  height: 42px;
+  width: 38px;
+  float: left;
+  margin-right: 10px;
+}
+/* line 257, ../sass/screen.scss */
+footer p {
+  padding-top: 11px;
 }
 
 /* =============================================================================
